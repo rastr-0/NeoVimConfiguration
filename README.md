@@ -12,15 +12,15 @@ Welcome to the NeoVim configuration for efficient coding experience. This setup 
 ## Preview
 
 1. Filesystem sidebar
-<img src="screenshots/FileSystem_sidebar.jpg" alt="Main Interface" width="200" height="300">
+<img src="screenshots/FileSystem_sidebar.jpg" alt="FileSystem Sidebar">
 2. Telescope
-![Telescope](screenshots/Telescope.jpg)
+<img src="screenshots/Telescope.jpg" alt="Telescope.jpg" width="426" height="235">
 3. Snippets + LSP
-![Snippets + LSP](screenshots/Snippets_and_LSP.jpg)
+<img src="screenshots/Snippets_and_LSP.jpg" alt="Snippets and LSP">
 4. Syntax highlighting
-![Syntax highlighting](screenshots/Syntax_highlighting.jpg)
+<img src="screenshots/Syntax_highlighting.jpg" alt="Syntax highlighting" width="395" height="266">
 5. Lualine
-![Lualine](screenshots/LuaLine.png)
+<img src="screenshots/LuaLine.png" alt="Lualine">
 
 ## Features
 

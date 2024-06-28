@@ -3,10 +3,24 @@ Welcome to the NeoVim configuration for efficient coding experience. This setup 
 
 ## Table of Contents
 
+- [Preview](#preview)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Contributing](#contributing)
+
+## Preview
+
+1. Filesystem sidebar
+[!Filesystem sidebar](screenshots/FileSystem_sidebar.jpg)
+2. Telescope
+[!Telescope](screenshots/Telescope.jpg)
+3. Snippets + LSP
+[!Snippets + LSP](screenshots/Snippets_and_LSP.jpg)
+4. Syntax highlighting
+[!Syntax highlighting](screenshots/Syntax_highlighting.jpg)
+5. Lualine
+[!Lualine](screenshots/Lualine.png)
 
 ## Features
 

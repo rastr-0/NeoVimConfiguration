@@ -1,7 +1,7 @@
 #!/bin/bash
 
 check_dependencies() {
-  for cmd in wget unzip; do
+  for cmd in wget unzip sysstat; do
     if ! command -v $cmd &> /dev/null; then
       echo "Installing $cmd..."
       sudo apt-get install -y $cmd &> /dev/null

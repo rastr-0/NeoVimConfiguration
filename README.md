@@ -12,7 +12,7 @@ Welcome to the NeoVim configuration for efficient coding experience. This setup 
 ## Preview
 
 1. Filesystem sidebar
-![Filesystem sidebar](screenshots/FileSystem_sidebar.jpg)
+<img src="screenshots/FileSystem_sidebar.jpg" alt="Main Interface" width="150" height="200">
 2. Telescope
 ![Telescope](screenshots/Telescope.jpg)
 3. Snippets + LSP

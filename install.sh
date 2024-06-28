@@ -5,6 +5,7 @@ check_dependencies() {
     if ! command -v $cmd &> /dev/null; then
       echo "Installing $cmd..."
       sudo apt-get install -y $cmd
+    fi
   done
 }
 
@@ -27,14 +28,13 @@ create_nvim_dir() {
 
 move_files_to_config_dir() {
   echo "Moving cloned files to .config/nvim directory"
-  mv init.lua ~/.config/nvim
-  mv -R lua ~/.config/nvim
+  mv init.lua lua/ README.md ~/.config/nvim
 }
 
 download_and_unzip_fonts() {
  echo "Downloading and installing Hack Nerd Font..."
  wget -q "https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip"
- unzip -q Hack-v3.003-ttf.zip -d /usr/share/fonts/Hack-v3.003-ttf/ 
+ sudo unzip -q Hack-v3.003-ttf.zip -d /usr/share/fonts/Hack-v3.003-ttf/ 
 }
 
 check_dependencies

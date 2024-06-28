@@ -20,7 +20,7 @@ Welcome to the NeoVim configuration for efficient coding experience. This setup 
 4. Syntax highlighting
 ![Syntax highlighting](screenshots/Syntax_highlighting.jpg)
 5. Lualine
-![Lualine](screenshots/Lualine.png)
+![Lualine](screenshots/LuaLine.png)
 
 ## Features
 

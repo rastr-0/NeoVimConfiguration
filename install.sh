@@ -1,9 +1,17 @@
 #!/bin/bash
 
+check_dependencies() {
+  for cmd in wget unzip; do
+    if ! command -v $cmd &> /dev/null; then
+      echo "Installing $cmd..."
+      sudo apt-get install -y $cmd
+  done
+}
+
 check_nvim() {
   if ! command -v nvim &> /dev/null; then
     echo "Installing NeoVim..."
-    sudo snap install nvim --classic
+    sudo snap install nvim --classic &> /dev/null
   fi
 }
 
@@ -23,17 +31,16 @@ move_files_to_config_dir() {
   mv -R lua ~/.config/nvim
 }
 
-download_and_move_fonts() {
- if ! command -v unzip &> /dev/null; then
-  echo "Installing unzip..."
-  sudo apt-get install unzip
- fi
+download_and_unzip_fonts() {
  echo "Downloading and installing Hack Nerd Font..."
- wget "https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip"
- unzip Hack-v3.003-ttf.zip -d /usr/share/fonts/Hack-v3.003-ttf/ 
+ wget -q "https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip"
+ unzip -q Hack-v3.003-ttf.zip -d /usr/share/fonts/Hack-v3.003-ttf/ 
 }
 
+check_dependencies
 check_nvim
 create_nvim_dir
 move_files_to_config_dir
-download_and_move_fonts
+download_and_unzip_fonts
+
+echo "Setup complete. Please start Neovim with \"nvim\" command to finish Lazy.nvim plugin installation."

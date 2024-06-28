@@ -16,10 +16,10 @@ check_nvim() {
 }
 
 create_nvim_dir() {
-  if [! -d ~/.config/ ]; then
+  if [ ! -d ~/.config/ ]; then
     echo "Creating ./config/nvim directory"
     mkdir -p ~/.config/nvim
-  elif [! -d ~/.config/nvim/ ]; then
+  elif [ ! -d ~/.config/nvim/ ]; then
     echo "Creating nvim/ inside .config/"
     mkdir -p ~/.config/nvim
   fi
